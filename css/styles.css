@@ -1,0 +1,353 @@
+:root {
+    --primary-color: #434455;
+    --dark-color: #2E2F42;
+    --brand-color: #4D5AE5;
+    --accent-color: #E7E9FC;
+    --white-color: #FFFFFF;
+    --light-color: #F4F4FD;
+    --active-color: #404BBF;
+    --indent-item: 32px;
+    --margin-card: 24px;
+    --indent-text: 16px;
+    --small-indent: 8px;
+}
+
+h1,
+h2,
+h3,
+p {
+margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    background-color: var(--white-color);
+}
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+padding-top: 120px;
+padding-bottom: 120px;
+}
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--dark-color);
+}
+
+.title {
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--dark-color);
+}
+
+.text {
+    margin-top: var(--small-indent);
+
+    line-height: 1.5;
+}
+
+.button {
+    font-family: inherit;
+    line-height: 1.19;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Header */
+
+.header-container {
+    display: flex;
+    padding-top: var(--margin-card);
+    padding-bottom: var(--margin-card);
+}
+
+.page-header {
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+nav {
+display: flex;
+}
+
+.logo {
+    margin-right: 77px;
+    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--brand-color);
+}
+
+.part-logo-header {
+    color: var(--dark-color);
+}
+
+.menu {
+    display: flex;
+
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--dark-color);
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+    color: var(--primary-color);
+}
+
+.menu-item:active {
+    color: var(--brand-color);
+}
+
+.contacts-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.list .contacts + .contacts {
+    margin-left: 40px;
+}
+
+.contacts {
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.contacts:hover,
+.contacts:focus {
+    color: var(--brand-color);
+    
+}
+
+/* Hero */
+
+.hero {
+    padding-top: 192px;
+    padding-bottom: 192px;
+    text-align: center;
+
+    background-color: var(--dark-color);
+}
+
+.hero .container {
+    padding-left: 333px;
+    padding-right: 333px;
+}
+
+.hero-title {
+    margin-bottom: 48px;
+
+    font-size: 56px;
+    line-height: 1.07;
+    color: var(--white-color);
+    text-transform: capitalize;
+}
+
+.part-hero-title {
+text-transform: lowercase;
+}
+
+.hero-btn {
+    padding: var(--indent-text) var(--indent-item);
+
+    text-transform: capitalize;
+    color: var(--white-color);
+    background-color: var(--brand-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button:hover,
+.button:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.button:active {
+    background-color: var(--active-color)
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Features */
+
+.features-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-list-item {
+width: calc(100% / 3 - var(--margin-card));
+}
+
+.features-list-item:not(:last-child) {
+    margin-right: var(--margin-card);
+}
+
+/* Gallery */
+
+.gallery-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 72px;
+}
+
+.gallery-list-img:not(:last-child) {
+    margin-right: var(--margin-card);
+}
+
+/* Team */
+
+.team-section {
+    background-color: var(--light-color);
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+}
+
+.team-list-card {
+    padding-bottom: var(--indent-item);
+    text-align: center;
+
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-card:not(:last-child) {
+    margin-right: var(--margin-card);
+}
+
+.team-list-title {
+    margin-top: var(--indent-item);
+    margin-bottom: var(--small-indent);
+}
+
+/* Footer */
+
+.footer-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer {
+    background-color: var(--dark-color);
+}
+
+.part-logo-footer {
+    color: var(--white-color);
+}
+
+.footer-text {
+    width: 264px;
+    margin-top: var(--indent-text);
+
+    color: var(--accent-color);
+}
+
+/* Portfolio */
+
+.filter-list{
+    display: flex;
+    justify-content: center;
+    margin-top: 96px;
+    margin-bottom: 72px;
+}
+
+.filter-list-item:not(:last-child) {
+    margin-right: var(--margin-card);
+}
+
+.filter-btn {
+    padding: var(--small-indent) var(--indent-text);
+
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4D5AE5;
+    background-color: var(--light-color);
+    border: 1px solid #E7E9FC;
+}
+
+.filter-btn:hover, 
+.filter-btn:focus {
+    color: var(--white-color);
+    background-color: var(--brand-color);
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -48px;
+    margin-right: calc(-1 * var(--margin-card));
+    padding-bottom: 120px;
+}
+
+.portfolio-list-card {
+margin-top: 48px;
+margin-right: var(--margin-card);
+padding-bottom: var(--indent-item);
+
+background: var(--white-color)
+border: 0.5px solid var(--light-color);
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-list-item {
+    margin-top: var(--indent-item);
+    padding-left: var(--indent-text);
+}
+
+.portfolio-list-text {
+margin-top: var(--small-indent);
+}
